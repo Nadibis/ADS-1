@@ -24,7 +24,7 @@ uint64_t nPrime(uint64_t n) {
         }
         simple++;
     }
-    co_return 0;
+    return 0;
 }
 
 uint64_t nextPrime(uint64_t value) {
