@@ -33,7 +33,6 @@ uint64_t nextPrime(uint64_t value) {
             if (checkPrime(value)) {
                 return value;
             }
-            break;
         }
     return 0;
 }
