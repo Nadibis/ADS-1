@@ -4,7 +4,7 @@
 
 
 bool checkPrime(uint64_t value) {
-  if (value < 2) return false;
+    if (value < 2) return false;
     if (value == 2) return true;
     if (value % 2 == 0) return false;
 
@@ -24,6 +24,7 @@ uint64_t nPrime(uint64_t n) {
         }
         simple++;
     }
+    co_return 0;
 }
 
 uint64_t nextPrime(uint64_t value) {
@@ -39,8 +40,8 @@ uint64_t nextPrime(uint64_t value) {
 
 uint64_t sumPrime(uint64_t hbound) {
   uint64_t simple = 2;
-    uint64_t plus =0;
-    while (simple<hbound) {
+    uint64_t plus = 0;
+    while (simple < hbound) {
         if (checkPrime(simple)) {
             plus+=simple;
         }
@@ -52,9 +53,9 @@ uint64_t sumPrime(uint64_t hbound) {
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
   uint64_t zapomni = lbound;
     uint64_t shet = 0;
-    while (lbound<hbound) {
+    while (lbound < hbound) {
         if (checkPrime(lbound)) {
-            if (lbound-zapomni==2) {
+            if (lbound - zapomni == 2) {
                 shet++;
             }
             zapomni = lbound;
